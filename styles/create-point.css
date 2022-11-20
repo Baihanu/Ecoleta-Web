@@ -34,13 +34,15 @@
 form {
     background-color: white;
 
-    margin: 80 auto;
+    margin: 80px auto;
     padding: 64px;
 
     border-radius: 8px;
 
     max-width: 730px;
 }
+
+
 
 form h1 {
     font-size: 36px;
@@ -54,14 +56,26 @@ form fieldset {
 
 form legend {
     margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
 }
 
 form legend h2 {
     font-size: 24px;
 }
 
+form legend span {
+    font-size: 14px;
+    color: var(--title-color);
+}
+
 form .field {
     flex: 1;
+
     display: flex;
     flex-direction: column;
 
@@ -70,10 +84,10 @@ form .field {
 
 form .field-group {
     display: flex;
-
 }
 
-form input, form select {
+form input,
+form select {
     background-color: #f0f0f5;
 
     border: 0;
@@ -82,7 +96,8 @@ form input, form select {
 
     border-radius: 8px;
 
-    outline: none;
+
+    /* outline: none; */
 }
 
 form select {
@@ -98,7 +113,6 @@ form label {
 
 form .field-group .field + .field {
     margin-left: 24px;
-
 }
 
 form button {
@@ -114,11 +128,11 @@ form button {
 
     border: 0;
 
-    margin-top: 40px;
+    margin-top:40px;
 
     transition: background-color 400ms;
 }
 
-from button:hover{
+form button:hover{
     background-color: #2fb86e;
 }
